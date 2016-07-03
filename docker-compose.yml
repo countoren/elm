@@ -1,0 +1,13 @@
+version: "2"
+services:
+  web:
+    build: .
+    image: web
+    ports: 
+      - "8000:8000"
+    volumes: 
+      - .:/app
+      - ~/.docker-shared:/shared
+    entrypoint: ""
+    command: bash -c "mkdir -p /shared && cp /app/alias.sh /shared"
+
