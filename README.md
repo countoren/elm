@@ -5,9 +5,10 @@ If you didnt created .docker-shared folder run the following command:
 
 To alias.sh to bashrc:
  
-      grep -q -F 'source ~/.docker-shared/alias.sh"' ~/.bashrc || echo 'source ~/.docker-shared/alias.sh"' >> ~/.bashrc
+      grep -q -F 'source ~/.docker-shared/alias.sh' ~/Dropbox/dotfiles/bashrc-shared-settings \
+			|| echo 'source ~/.docker-shared/alias.sh' >> ~/Dropbox/dotfiles/bashrc-shared-settings
 
-to create docker-shared alias.sh: 
+To create docker-shared alias.sh: 
  
      mkdir -p ~/.docker-shared && touch ~/.docker-shared/alias.sh
 
